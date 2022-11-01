@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon",
     "test": "jest --verbose ./test"
   },
   "keywords": [],
@@ -16,7 +17,8 @@
     "json_error_response": "^1.0.5",
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
-    "sequelize": "^6.25.3"
+    "sequelize": "^6.25.3",
+    "swagger-ui-express": "^4.5.0"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
