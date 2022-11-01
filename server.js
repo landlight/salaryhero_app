@@ -12,6 +12,11 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
+// call sysc()
+const db = require("./src/app/models");
+
+db.sequelize.sync();
+
 // Setup server port
 const port = process.env.NODE_DOCKER_PORT || 8080;
 
