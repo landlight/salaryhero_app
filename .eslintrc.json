@@ -15,6 +15,7 @@
             "error",
             "double"
         ],
-        "new-cap": "off"
+        "new-cap": "off",
+        "linebreak-style": 0,
     }
 }
