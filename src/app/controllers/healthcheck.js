@@ -1,8 +1,10 @@
 const jsonError = require("json_error_response");
+const healthCheckService = require("../services/healthcheck");
 
 const healthcheck = async (req, res, next) => {
   try {
-    return res.json({message: "success"});
+    const result = healthCheckService.healthCheck();
+    return res.status(200).json(result);
   } catch (err) {
     jsonError.DefaultError(err, res);
   }
