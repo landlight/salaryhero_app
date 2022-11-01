@@ -6,7 +6,7 @@ describe("Test healthCheck controller", () => {
     const req = mockUtils.mockRequest({}, {});
     const res = mockUtils.mockResponse();
     await healthCheckController.healthcheck(req, res);
-    expect(res.status).toHaveBeenCalledWith(201);
+    expect(res.status).toHaveBeenCalledWith(200);
     expect(res.json).toHaveBeenCalledTimes(1);
   });
 });
